@@ -13,6 +13,7 @@ var revCollector = require('gulp-rev-collector')
 var revDel = require('rev-del')
 var runSequence = require('run-sequence')
 var templateCache = require('gulp-angular-templatecache')
+var watch = require('gulp-watch')
 
 var vendorJs = [
   // 'bower_components/angular/angular.js',
@@ -37,6 +38,12 @@ gulp.task('templates', function() {
     .pipe(plumber())
     .pipe(templateCache({standalone: true}))
     .pipe(gulp.dest('./revisions'))
+})
+
+gulp.task('stream', function () {
+    // Endless stream mode
+    return watch('assets/**/*', { ignoreInitial: false })
+        .pipe(gulp.dest('build'))
 })
 
 gulp.task('vendor-css', function () {
@@ -106,7 +113,7 @@ gulp.task('revision', function () {
 })
 
 gulp.task('default', function (callback) {
-  runSequence('build', 'watch', callback)
+  runSequence('build', 'stream', 'watch', callback)
 })
 
 gulp.task('build', function (callback) {
