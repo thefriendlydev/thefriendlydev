@@ -1,0 +1,46 @@
+{
+  "name": "thefriendlydev",
+  "version": "0.0.0",
+  "description": "thefriendlydev",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thefriendlydev/thefriendlydev"
+  },
+  "bugs": {
+    "url": "https://github.com/thefriendlydev/thefriendlydev/issues"
+  },
+  "homepage": "https://github.com/thefriendlydev/thefriendlydev",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "0.0.15",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.1.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
+    "rev-del": "^1.0.5",
+    "run-sequence": "^1.2.2",
+    "standard": "^8.6.0"
+  },
+  "standard": {
+    "ignore": [
+      "build",
+      "bower_components",
+      "frontend/icons"
+    ]
+  },
+  "dependencies": {}
+}

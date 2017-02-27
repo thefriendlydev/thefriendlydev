@@ -1,0 +1,26 @@
+{
+  "name": "thefriendlydev",
+  "version": "0.0.0",
+  "description": "thefriendlydev",
+  "homepage": "https://github.com/thefriendlydev/thefriendlydev",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-ui-router": "^0.4.2",
+    "angular-sanitize": "^1.6.2",
+    "angular-touch": "^1.6.2",
+    "angular-animate": "^1.6.2",
+    "animate.css": "^3.5.2",
+    "jquery": "^3.1.1",
+    "loaders.css": "^0.1.2",
+    "lodash": "^4.17.4",
+    "matchHeight": "^0.7.2",
+    "twg-frontend-scaffolding": "^0.1.2"
+  },
+  "devDependencies": {}
+}
