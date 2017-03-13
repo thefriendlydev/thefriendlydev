@@ -35,7 +35,9 @@
 </div>
 
 <div class="section about">
-
+  <div class="container">
+    <div class="aboutTitle"><?php the_field('about_title'); ?></div>
+  </div>
 </div>
 
 <?php get_footer(); ?>

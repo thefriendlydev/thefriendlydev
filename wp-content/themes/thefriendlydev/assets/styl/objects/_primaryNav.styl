@@ -19,6 +19,7 @@
   display: table-cell
   text-align: right
 
+
 .navLogo
   display: inline-block
   margin-right: 30px
@@ -53,6 +54,8 @@
 .navrightItem
   padding-left: 25px
   display: inline-block
+  @media breakpoints.portable.breakpoint
+    display: none
   &:first-child
     padding-left: 0
   a
@@ -65,14 +68,17 @@
       color: lightBlue
       border-bottom: 3px solid rgba(131,212,214,0.5)
 
-.navrightItem--button a
-  font-weight: medium
-  color: darkBlue
-  background-color: lightBlue
-  padding: 5px 15px
-  border-radius: 3px
-  border-bottom: 0
-  &:hover
-    background-color: #B1EFED
-    border-bottom: 0
+.navrightItem--button
+  @media breakpoints.portable.breakpoint
+    display: inline-block
+  a
+    font-weight: medium
     color: darkBlue
+    background-color: lightBlue
+    padding: 3px 15px
+    border-radius: 3px
+    border-bottom: 0
+    &:hover
+      background-color: #B1EFED
+      border-bottom: 0
+      color: darkBlue
