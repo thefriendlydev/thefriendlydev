@@ -14,7 +14,8 @@ require_once 'includes/wordpress/_init.php';
 
 
 //-- Custom Fields Definitions --------------------------------------------
-
+require_once 'includes/custom_fields/_init.php';
+require_once 'includes/custom_fields/options.php';
 
 //-- Utils ----------------------------------------------------------------
 require_once 'includes/utils/_init.php';

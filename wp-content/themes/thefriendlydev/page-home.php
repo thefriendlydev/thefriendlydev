@@ -15,4 +15,12 @@
 
 <?php get_header(); ?>
 
+<div class="section hero hero--home">
+  <div class="container">
+    <div class="mainTagline"></div>
+    <div class="subTagline"></div>
+    <div class="ctas"></div>
+  </div>
+</div>
+
 <?php get_footer(); ?>

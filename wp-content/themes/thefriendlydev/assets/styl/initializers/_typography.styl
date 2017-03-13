@@ -4,10 +4,70 @@ html, body, p
   line-height: base-line-height
   font-weight: base-font-weight
   color: mainText
+  @media breakpoints.palm.breakpoint
+    font-size: 18px
+    line-height: 24px
 
 h1, h2, h3, h4, h5, h6
   font-family: headerFont
   margin: 0
+
+h1
+  font-weight: semibold
+  font-size: 70px
+  line-height: 78px
+  @media breakpoints.lap.breakpoint
+    font-size: 50px
+    line-height: 68px
+  @media breakpoints.palm.breakpoint
+    font-size: 30px
+    line-height: 44px
+
+h2
+  font-weight: bold
+  font-size: 60px
+  line-height: 70px
+  @media breakpoints.portable.breakpoint
+    font-size: 45px
+    line-height: 52px
+
+h3
+  font-weight: bold
+  font-size: 38px
+  line-height: 50px
+  @media breakpoints.palm.breakpoint
+    font-size: 30px
+    line-height: 40px
+
+h4
+  font-weight: bold
+  font-size: 30px
+  line-height: 42px
+  @media breakpoints.lap.breakpoint
+    font-size: 26px
+    line-height: 38px
+  @media breakpoints.palm.breakpoint
+    font-size: 22px
+    line-height: 36px
+
+h5
+  font-weight: light
+  font-size: 30px
+  line-height: 42px
+  @media breakpoints.lap.breakpoint
+    font-size: 26px
+    line-height: 38px
+  @media breakpoints.palm.breakpoint
+    font-size: 22px
+    line-height: 36px
+
+h6
+  font-weight: light
+  font-size: 24px
+  line-height: 32px
+  @media breakpoints.palm.breakpoint
+    font-size: 20px
+    line-height: 28px
 
 p
   margin: 0
@@ -15,6 +75,20 @@ p
 a
   text-decoration: none
   transition: all 0.2s ease-in-out
+  &.lightLink
+    color: lightPurple
+    &:hover
+      text-decoration: underline
+  &.darkLink
+    color: salmon
+    &:hover
+      text-decoration: underline
+  &.inlineLink
+    color: salmon
+    &:hover
+      text-decoration: underling
+    &:after
+      content: '»'
 
 img
   max-width: 100%

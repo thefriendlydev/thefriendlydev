@@ -1,0 +1,77 @@
+.nav
+  width: 100%
+  position: fixed
+  background-color: mediumPurple
+  padding: 18px 0
+
+.navContainer
+  display: table
+  width: 100%
+  *
+    vertical-align: middle
+
+.nav-left
+  display: table-cell
+  text-align: left
+
+.nav-right
+  display: table-cell
+  text-align: right
+
+.navLogo
+  display: inline-block
+  margin-right: 30px
+  a
+    display: inline-block
+  img
+    display: inline-block
+    max-height: 32px
+
+.menu-primary-container
+  display: inline-block
+
+.primaryNav
+  @extend .u-plainList
+  li
+    display: inline-block
+    padding-right: 25px
+    &:last-child
+      padding-right: 0
+    a
+      display: inline-block
+      color: #FFFFFF
+      font-weight: medium
+      border-bottom: 3px solid rgba(131,212,214,0)
+      &:hover
+        color: lightBlue
+        border-bottom: 3px solid rgba(131,212,214,0.5)
+    &.current-menu-item a
+      color: lightBlue
+      border-bottom: 3px solid rgba(131,212,214,0.5)
+
+.navrightItem
+  padding-left: 25px
+  display: inline-block
+  &:first-child
+    padding-left: 0
+  a
+    display: inline-block
+    font-size: 16px
+    color: violet
+    font-weight: light
+    border-bottom: 3px solid rgba(131,212,214,0)
+    &:hover
+      color: lightBlue
+      border-bottom: 3px solid rgba(131,212,214,0.5)
+
+.navrightItem--button a
+  font-weight: medium
+  color: darkBlue
+  background-color: lightBlue
+  padding: 5px 15px
+  border-radius: 3px
+  border-bottom: 0
+  &:hover
+    background-color: #B1EFED
+    border-bottom: 0
+    color: darkBlue

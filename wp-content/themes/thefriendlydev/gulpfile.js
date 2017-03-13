@@ -113,7 +113,7 @@ gulp.task('revision', function () {
 })
 
 gulp.task('default', function (callback) {
-  runSequence('build', 'stream', 'watch', callback)
+  runSequence('build', 'watch', callback)
 })
 
 gulp.task('build', function (callback) {
