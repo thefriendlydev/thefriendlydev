@@ -1,2 +1,2 @@
 <?php
-// include_once 'options.php';
+include_once 'home/main_hero.php';

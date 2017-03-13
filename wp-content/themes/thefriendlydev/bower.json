@@ -20,7 +20,8 @@
     "loaders.css": "^0.1.2",
     "lodash": "^4.17.4",
     "matchHeight": "^0.7.2",
-    "twg-frontend-scaffolding": "^0.1.2"
+    "twg-frontend-scaffolding": "^0.1.2",
+    "wow": "wowjs#^1.1.2"
   },
   "devDependencies": {}
 }

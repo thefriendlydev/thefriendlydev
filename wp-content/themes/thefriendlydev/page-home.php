@@ -17,10 +17,25 @@
 
 <div class="section hero hero--home">
   <div class="container">
-    <div class="mainTagline"></div>
-    <div class="subTagline"></div>
-    <div class="ctas"></div>
+    <div class="welcome">
+      <img class="wow rotateInDownRight" data-wow-duration="2s" src="<?php echo get_template_directory_uri() ?>/dist/img/hand.png">
+    </div>
+    <div class="mainTagline"><?php the_field('main_tagline'); ?></div>
+    <div class="subTagline"><?php the_field('sub_tagline'); ?></div>
+    <?php if( have_rows('ctas') ): ?>
+      <div class="ctas">
+        <?php while( have_rows('ctas') ): the_row(); ?>
+          <a class="button" href="<?= the_sub_field('cta_button_link'); ?>">
+            <?= the_sub_field('cta_button_text'); ?>
+          </a>
+        <?php endwhile; ?>
+      </div>
+    <?php endif; ?>
   </div>
+</div>
+
+<div class="section about">
+
 </div>
 
 <?php get_footer(); ?>

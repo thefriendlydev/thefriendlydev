@@ -24,6 +24,7 @@ var vendorJs = [
   // 'bower_components/angular-animate/angular-animate.js',
   // 'bower_components/lodash/lodash.js',
   'bower_components/jquery/dist/jquery.min.js',
+  'bower_components/wow/dist/wow.js',
   'bower_components/matchHeight/dist/jquery.matchHeight.js'
 ]
 
