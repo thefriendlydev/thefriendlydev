@@ -37,6 +37,30 @@
 <div class="section about">
   <div class="container">
     <div class="aboutTitle"><?php the_field('about_title'); ?></div>
+    <div class="aboutText"><?php the_field('about_text'); ?></div>
+    <div class="testimonailTitle"><?php the_field('testimonial_title'); ?></div>
+    <?php $testimonials = get_field('testimonials'); if( $testimonials ): ?>
+      <div class="grid grid--middle testimonials">
+        <?php foreach( $testimonials as $post): setup_postdata($post); ?>
+          <div class="grid-1of2 grid-1of1--palm">
+            <div class="testimonial">
+              <div class="testimonial-text"><?php the_field('testimonial_text'); ?></div>
+              <div class="combo combo--middle">
+                <div class="combo-first">
+                  <div class="testimonial-photo">
+                    <img src="<?php the_field('testimonial_photo'); ?>">
+                  </div>
+                </div>
+                <div class="combo-last">
+                  <div class="testimonial-name"><?php the_field('testimonial_name'); ?></div>
+                  <div class="testimonial-title"><?php the_field('testimonial_title'); ?></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; wp_reset_postdata(); ?>
+      </div>
+    <?php endif; ?>
   </div>
 </div>
 

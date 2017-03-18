@@ -12,6 +12,7 @@ require_once 'includes/wordpress/_init.php';
 
 //-- Custom Post Type --------------------------------------------
 require_once 'includes/post_types/testimonials.php';
+require_once 'includes/post_types/projects.php';
 
 //-- Custom Fields Definitions --------------------------------------------
 require_once 'includes/custom_fields/_init.php';

@@ -3,7 +3,7 @@ html, body, p
   font-size: base-font-size
   line-height: base-line-height
   font-weight: base-font-weight
-  color: mainText
+  color: darkGrey
   @media breakpoints.palm.breakpoint
     font-size: 18px
     line-height: 24px
@@ -70,7 +70,7 @@ h6
     line-height: 28px
 
 p
-  margin: 0 0 10px
+  margin: 0 0 15px
 
 * p:last-child
   margin: 0
@@ -80,16 +80,19 @@ a
   transition: all 0.2s ease-in-out
   &.lightLink
     color: lightPurple
+    border-bottom: 3px solid transparent
     &:hover
-      text-decoration: underline
+      border-bottom: 3px solid rgba(88,68,119,0.5)
   &.darkLink
     color: salmon
+    border-bottom: 3px solid transparent
     &:hover
-      text-decoration: underline
+      border-bottom: 3px solid rgba(219,132,113,0.5)
   &.inlineLink
     color: salmon
+    border-bottom: 3px solid transparent
     &:hover
-      text-decoration: underling
+      border-bottom: 3px solid rgba(219,132,113,0.5)
     &:after
       content: '»'
 
