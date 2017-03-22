@@ -64,4 +64,38 @@
   </div>
 </div>
 
+<div class="section myWork" id="myWork">
+  <div class="container">
+    <div class="myWorkTitle myWorkTitle--home"><?php the_field('my_work_title'); ?></div>
+    <div class="myWorkSubTitle"><?php the_field('my_work_sub_title'); ?></div>
+
+    <?php $projects = get_field('projects'); if( $projects ): ?>
+      <div class="grid grid--middle projects projects--home">
+        <?php foreach( $projects as $post): setup_postdata($post); ?>
+          <div class="grid-1of2 grid-1of1--palm">
+            <div class="project">
+              <a href="<?php echo get_permalink(); ?>" class="project-thumbnail" style="background-color:<?php the_field('project_bg_color'); ?>">
+                <img src="<?php the_field('project_thumbnail'); ?>">
+                <div class="projectHover">
+                  <div class="projectHover-container">
+                    <div class="projectHover-text">View Project</div>
+                    <i class="icon icon-chevron-with-circle-right"></i>
+                  </div>
+                </div>
+              </a>
+
+              <div class="project-name"><?php the_field('project_name'); ?></div>
+              <div class="project-shortDescription">
+                <?php the_field('project_short_description'); ?> <a class="darkLink" href="<?php echo get_permalink(); ?>">View project »</a>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; wp_reset_postdata(); ?>
+      </div>
+    <?php endif; ?>
+
+    <a href="<?php the_field('my_work_cta_link'); ?>" class="button"><?php the_field('my_work_cta_text'); ?></a>
+  </div>
+</div>
+
 <?php get_footer(); ?>

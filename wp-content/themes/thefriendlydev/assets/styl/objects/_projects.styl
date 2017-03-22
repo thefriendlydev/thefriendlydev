@@ -1,0 +1,70 @@
+.myWork
+  background-color: lightGrey
+  text-align: center
+
+.myWorkTitle
+  @extend h2
+  color: lightPurple
+  text-align: center
+  margin-bottom: 40px
+
+.myWorkTitle--home
+  margin-bottom: 20px
+
+.myWorkSubTitle
+  @extend h6
+  margin-bottom: 40px
+
+.projects--home
+  margin-bottom: 0
+
+.project
+  margin-bottom: 60px
+
+.project-thumbnail
+  display: block
+  text-align: center
+  padding: 50px 50px 0
+  margin-bottom: 20px
+  position: relative
+  overflow: hidden
+  img
+    display: block
+
+.project-name
+  @extend h4
+  color: lightPurple
+  text-align: left
+
+.project-shortDescription
+  text-align: left
+
+.projectHover
+  visibility: hidden !important
+  opacity: 0
+  transition: all 0.4s ease-in-out
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  background-color: rgba(67,52,96,0.8)
+  .icon
+    color: #FFFFFF
+    font-size: 70px
+
+.project-thumbnail:hover .projectHover
+  visibility: visible !important
+  opacity: 1
+
+.projectHover-container
+  text-align: center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+
+.projectHover-text
+  @extend h4
+  color: #FFFFFF
+  margin-bottom: 15px
