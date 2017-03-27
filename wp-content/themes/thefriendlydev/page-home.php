@@ -98,4 +98,28 @@
   </div>
 </div>
 
+<div class="section mySkills" id="mySkills">
+  <div class="container">
+    <div class="mySkills-title"><?php the_field('my_skills_title'); ?></div>
+
+    <?php if( get_field('video_embed_code') ): ?>
+      <div class="smallerContainer">
+        <div class="videoWrapper">
+          <?php the_field('video_embed_code'); ?>
+        </div>
+      </div>
+    <?php endif; ?>
+
+    <div class="combo combo--middle friends">
+      <div class="combo-first">
+        <img class="friends-image" src="<?php the_field('friends_image'); ?>" alt="I have good friends">
+      </div>
+      <div class="combo-last">
+        <div class="friends-title"><?php the_field('friends_title'); ?></div>
+        <div class="friends-text"><?php the_field('friends_text'); ?></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php get_footer(); ?>
