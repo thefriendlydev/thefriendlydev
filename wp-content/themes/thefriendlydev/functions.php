@@ -17,6 +17,7 @@ require_once 'includes/post_types/projects.php';
 //-- Custom Fields Definitions --------------------------------------------
 require_once 'includes/custom_fields/_init.php';
 require_once 'includes/custom_fields/options.php';
+require_once 'includes/custom_fields/options-footer.php';
 
 //-- Utils ----------------------------------------------------------------
 require_once 'includes/utils/_init.php';
@@ -39,4 +40,6 @@ function truncate($text, $chars = 25) {
     $text = $text."...";
     return $text;
 }
+
+define( 'WPCF7_AUTOP', false );
 

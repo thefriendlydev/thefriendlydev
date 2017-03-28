@@ -1,0 +1,50 @@
+.contact
+  background-color: lightGrey
+  padding: 80px 0
+  @media breakpoints.lap.breakpoint
+    padding: 60px 0
+  @media breakpoints.palm.breakpoint
+    padding: 40px 0
+
+.contact-title
+  @extend h3
+  margin-bottom: 15px
+  text-align: center
+
+.contact-subTitle
+  @extend h6
+  font-weight: regular
+  font-style: italic
+  text-align: center
+
+.contactLinks
+  display: table
+  width: 100%
+  margin-bottom: 60px
+  @media breakpoints.palm.breakpoint
+    display: block
+
+.contactLinks-phone
+  text-align: left
+  @media breakpoints.palm.breakpoint
+    margin-bottom: 5px
+
+.contactLinks-email
+  text-align: right
+
+.contactLinks-phone, .contactLinks-email
+  @extend h3
+  font-weight: light
+  display: table-cell
+  a
+    display: inline-block
+  @media breakpoints.palm.breakpoint
+    display: block
+    text-align: center
+    font-size: 24px
+
+.contact-form
+  .wpcf7 .wpcf7-form .grid
+    margin-bottom: 20px
+    .grid-1of2
+      margin-bottom: 25px
