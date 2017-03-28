@@ -4,20 +4,31 @@
   background-color: mediumPurple
   padding: 18px 0
   z-index: 10
+  @media breakpoints.palm.breakpoint
+    padding: 12px 0
+    position: static
+    .container
+      padding: 0
 
 .navContainer
   display: table
   width: 100%
   *
     vertical-align: middle
+  @media breakpoints.palm.breakpoint
+    display: block
 
 .nav-left
   display: table-cell
   text-align: left
+  @media breakpoints.palm.breakpoint
+    display: block
 
 .nav-right
   display: table-cell
   text-align: right
+  @media breakpoints.palm.breakpoint
+    display: none
 
 
 .navLogo
@@ -25,12 +36,28 @@
   margin-right: 30px
   a
     display: inline-block
+    &:focus
+      outline: none
   img
     display: inline-block
     max-height: 32px
+  @media breakpoints.palm.breakpoint
+    display: block
+    border-bottom: 1px solid violet
+    margin-right: 0
+    text-align: center
+    background-color: mediumPurple
+    img
+      margin-bottom: 12px
+      max-height: 24px
 
 .menu-primary-container
   display: inline-block
+  @media breakpoints.palm.breakpoint
+    display: block
+    text-align: center
+    background-color: darkPurple
+    padding-top: 12px
 
 .primaryNav
   @extend .u-plainList
@@ -39,6 +66,8 @@
     padding-right: 25px
     &:last-child
       padding-right: 0
+      @media breakpoints.large.breakpoint
+        display: none
     a
       display: inline-block
       color: #FFFFFF
@@ -50,6 +79,9 @@
     &.current-menu-item a
       color: lightBlue
       border-bottom: 3px solid rgba(131,212,214,0.5)
+  @media breakpoints.palm.breakpoint
+    display: block
+    text-align: center
 
 .navrightItem
   padding-left: 25px

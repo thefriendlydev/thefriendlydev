@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Site description">
 
-  <title>The Friendly Developer - Your go to freelancer!</title>
+  <title>The Friendly Developer - Your go to web developer or UX/UI designer!</title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
   <link href="<?php bloginfo('template_url'); ?>/dist/img/favicon.ico" rel="icon" type="image/x-icon">
