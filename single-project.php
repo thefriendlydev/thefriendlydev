@@ -42,7 +42,7 @@
           <?php endif; ?>
 
           <?php if( get_field('project_cta_text') && get_field('project_cta_link') ): ?>
-            <a class="button projectCta" href="<?php the_field('project_cta_link'); ?>">
+            <a class="button projectCta" target="_blank" href="<?php the_field('project_cta_link'); ?>">
               <?php the_field('project_cta_text'); ?>
             </a>
           <?php endif; ?>
