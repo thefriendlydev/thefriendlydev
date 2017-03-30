@@ -216,7 +216,7 @@ acf_add_local_field_group(array (
         'class' => '',
         'id' => '',
       ),
-      'default_value' => '',
+      'default_value' => 'visit website',
       'placeholder' => '',
       'prepend' => '',
       'append' => '',
