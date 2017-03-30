@@ -108,6 +108,20 @@
           <?php the_field('video_embed_code'); ?>
         </div>
       </div>
+    <?php else: ?>
+      <?php if( have_rows('skills') ): ?>
+        <div class="grid skills">
+          <?php while( have_rows('skills') ): the_row(); ?>
+            <div class="grid-1of5 grid-1of2--portable">
+              <div class="skill">
+                <img class="skill-image" src="<?php the_sub_field('skill_image'); ?>">
+                <div class="skill-name"><?php the_sub_field('skill_name'); ?></div>
+              </div>
+            </div>
+          <?php endwhile; ?>
+        </div>
+      <?php endif; ?>
+      <div class="smallerContainer smallerContainer--text"><?php the_field('skills_paragraph'); ?></div>
     <?php endif; ?>
 
     <div class="combo combo--middle friends">

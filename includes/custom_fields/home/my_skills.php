@@ -125,7 +125,7 @@ acf_add_local_field_group(array (
       'placeholder' => '',
       'maxlength' => '',
       'rows' => 4,
-      'new_lines' => 'wpautop',
+      'new_lines' => '',
     ),
     array (
       'key' => 'field_58d88acb235d9',
