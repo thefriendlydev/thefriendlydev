@@ -1,0 +1,132 @@
+.section.projectHero
+  padding: 0
+  margin-top: 70px
+  @media breakpoints.palm.breakpoint
+    margin-top: 0
+
+.projectHero-thumbnail
+  display: block
+  margin-top: 70px
+  @media breakpoints.palm.breakpoint
+    margin-top: 20px
+
+.projectHero-name
+  @extend h3
+  color: #FFFFFF
+  margin-bottom: 20px
+  @media breakpoints.palm.breakpoint
+    text-align: center
+    margin-top: 40px
+    margin-bottom: 10px
+
+.projectHero-shortDescription
+  @extend h6
+  color: #FFFFFF
+  @media breakpoints.palm.breakpoint
+    text-align: center
+
+.section.projectDetails
+  background-color: lightGrey
+  padding: 110px 0
+  @media breakpoints.lap.breakpoint
+    padding: 80px 0
+  @media breakpoints.palm.breakpoint
+    padding: 50px 0
+
+.rolesContainer
+  padding-left: 20px
+  @media breakpoints.palm.breakpoint
+    padding: 0
+
+.projectDetails-lightText
+  @extend h6
+  color: mediumGrey
+  margin-bottom: 40px
+
+.projectRoleTitle
+  font-size: 18px
+  font-weight: bold
+  color: lightPurple
+  margin-bottom: 10px
+
+.projectRole
+  margin-bottom: 10px
+
+.projectCta
+  margin-top: 20px
+
+.projectPhotos
+  padding: 100px 0 0
+  @media breakpoints.lap.breakpoint
+    padding: 70px 0 0
+  @media breakpoints.palm.breakpoint
+    padding: 40px 0 0
+
+.projectPhoto
+  display: block
+
+.section.projectTestimonials
+  background-image: url("/wp-content/themes/thefriendlydev/dist/img/pattern.png")
+  background-color: salmon
+  background-repeat: repeat
+  text-align: center
+  .testimonial
+    text-align: left
+
+.section.nextProject
+  background-color: darkPurple
+  padding: 0
+  transition: all 0.2s ease-in-out
+
+.nextProject-thumbnail
+  display: block
+  margin-top: 30px
+  max-height: 230px
+  width: auto
+  @media breakpoints.lap.breakpoint
+    max-height: 180px
+
+.nextProject-topText
+  font-size: 18px
+  color: violet
+  margin-bottom: 40px
+  @media breakpoints.lap.breakpoint
+    margin-bottom: 10px
+  @media breakpoints.palm.breakpoint
+    margin-bottom: 5px
+
+.nextProject-name
+  @extend h3
+  color: #FFFFFF
+  margin-bottom: 5px
+
+.nextProject-short
+  color: #FFFFFF
+  max-width: 370px
+  @media breakpoints.palm.breakpoint
+    max-width: 210px
+
+.nextProject .container a .combo:before
+  content: "\e900"
+  font-family: 'icomoon' !important
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  color: #FFFFFF
+  font-size: 70px
+  position: absolute
+  right: 20px
+  top: 50%
+  margin-top: -35px
+  @media breakpoints.palm.breakpoint
+    right: 15px
+
+@media breakpoints.palm.breakpoint
+  .section.nextProject
+    padding: 30px 0
+    .combo .combo-first
+      display: none
+

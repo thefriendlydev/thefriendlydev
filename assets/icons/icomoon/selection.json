@@ -29,6 +29,35 @@
       "setIdx": 0,
       "setId": 1,
       "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M128 128h768v768h-768z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "stop",
+          "player",
+          "square"
+        ],
+        "defaultCode": 59934,
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "stop2, player10",
+        "name": "bullet",
+        "id": 286,
+        "order": 2,
+        "prevSize": 32,
+        "code": 59934
+      },
+      "setIdx": 1,
+      "setId": 0,
+      "iconIdx": 286
     }
   ],
   "height": 1024,

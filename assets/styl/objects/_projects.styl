@@ -30,6 +30,8 @@
   overflow: hidden
   img
     display: block
+  @media breakpoints.palm.breakpoint
+    padding: 30px 30px 0
 
 .project-name
   @extend h4
@@ -52,6 +54,8 @@
   .icon
     color: #FFFFFF
     font-size: 70px
+  @media breakpoints.palm.breakpoint
+    display: none
 
 .project-thumbnail:hover .projectHover
   visibility: visible !important
