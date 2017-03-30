@@ -70,7 +70,7 @@
     <div class="myWorkSubTitle"><?php the_field('my_work_sub_title'); ?></div>
 
     <?php $projects = get_field('projects'); if( $projects ): ?>
-      <div class="grid grid--middle projects projects--home">
+      <div class="grid projects projects--home">
         <?php foreach( $projects as $post): setup_postdata($post); ?>
           <div class="grid-1of2 grid-1of1--palm">
             <div class="project">
