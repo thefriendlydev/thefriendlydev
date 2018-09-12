@@ -10,12 +10,16 @@
             <div class="lightBlueDivider"></div>
 
             <div class="contactLinks">
-              <div class="contactLinks-phone">
-                <?php the_field('contact_phone', 'option'); ?>
-              </div>
-              <div class="contactLinks-email">
-                <?php the_field('contact_email', 'option'); ?>
-              </div>
+              <?php if (get_field('contact_phone', 'option')): ?>
+                <div class="contactLinks-phone">
+                  <?php the_field('contact_phone', 'option'); ?>
+                </div>
+              <?php endif; ?>
+              <?php if (get_field('contact_email', 'option')): ?>
+                <div class="contactLinks-email">
+                  <?php the_field('contact_email', 'option'); ?>
+                </div>
+              <?php endif; ?>
             </div>
 
             <div class="contact-form">
