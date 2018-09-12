@@ -16,7 +16,7 @@
                 </div>
               <?php endif; ?>
               <?php if (get_field('contact_email', 'option')): ?>
-                <div class="contactLinks-email">
+                <div class="contactLinks-email <?php if (!get_field('contact_phone', 'option')): ?>u-alignLeft<?php endif; ?>">
                   <?php the_field('contact_email', 'option'); ?>
                 </div>
               <?php endif; ?>
