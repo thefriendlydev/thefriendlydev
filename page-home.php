@@ -18,7 +18,7 @@
 <div class="section hero hero--home">
   <div class="container">
     <div class="welcome">
-      <img class="wow rotateInDownRight" data-wow-duration="2s" src="<?php echo get_template_directory_uri() ?>/dist/img/hand.png">
+      <img class="wow rotateInDownRight" data-wow-duration="2s" src="<?php echo get_template_directory_uri() ?>/dist/img/handnew.png">
     </div>
     <div class="mainTagline"><?php the_field('main_tagline'); ?></div>
     <div class="subTagline"><?php the_field('sub_tagline'); ?></div>
