@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="You deserve a friendly, reliable and capable freelancer! I specialize in partnering with agencies that need help from a kick-ass custom WordPress developer.">
 
-  <title>The Friendly Developer - Your go to web developer or UX/UI designer!</title>
+  <title>The Friendly Developer - Your go to custom WordPress freelance developer!</title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
   <link href="<?php bloginfo('template_url'); ?>/dist/img/favicon.ico" rel="icon" type="image/x-icon">
